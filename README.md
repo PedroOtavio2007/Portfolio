@@ -26,6 +26,6 @@ O site possui uma estrutura *single-page* (página única), leve e responsiva, d
 
 ## 📬 Contato
 
-- **LinkedIn:** [Pedro Otávio](https://www.linkedin.com/in/pedro-otávio-b38120353)
+- **LinkedIn:** Pedro Otávio(https://www.linkedin.com/in/pedro-ot%C3%A1vio-b38120353/)
 - **GitHub:** [@Pedro Otávio](https://github.com/PedroOtavio2007)
 - **E-mail:** pedroramos.07@hotmail.com
