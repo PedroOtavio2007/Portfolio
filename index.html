@@ -1,173 +1,132 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Desenvolvedor de Software</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Portfólio de Pedro Ramos, estudante de Engenharia de Computação.">
+    <title>Portfólio | Pedro Ramos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
-
-    <!-- Header / Navegação -->
-    <header class="fixed top-0 w-full bg-gray-900/90 backdrop-blur border-b border-gray-800 z-50">
-        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold text-blue-400">Pedro Ramos</span>
-            <nav class="space-x-6 text-sm font-medium text-gray-400">
-                <a href="#sobre" class="hover:text-white transition">Sobre</a>
-                <a href="#projetos" class="hover:text-white transition">Projetos</a>
-                <a href="#habilidades" class="hover:text-white transition">Habilidades</a>
-                <a href="#contato" class="hover:text-white transition">Contato</a>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="#sobre">Pedro Ramos</a>
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#contato">Contato</a>
             </nav>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 pt-28 pb-16 space-y-20">
-
-        <!-- Seção Sobre Mim -->
-        <section id="sobre" class="space-y-6">
-            <div class="inline-block px-3 py-1 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full text-xs font-semibold uppercase tracking-wider">
-                Desenvolvedor de Software
-            </div>
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
-                Olá, sou o Pedro! Sou estudante de <span class="text-blue-400">Engenharia de Computação</span>.
-            </h1>
-            <p class="text-gray-300 text-lg leading-relaxed">
-                Focado em desenvolvimento de software e resolução de problemas através da tecnologia. Tenho experiência prática no desenvolvimento de aplicações mobile e sistemas utilizando <strong>TypeScript, React Native, Python e C</strong>, com foco na escrita de código limpo, modular e no uso de boas práticas de controle de versão com <strong>Git e GitHub</strong>.
-            </p>
-            <p class="text-gray-400 leading-relaxed">
-                Atuo frequentemente em projetos colaborativos e acadêmicos, participando desde a definição de requisitos até a implementação de módulos específicos em equipe. Busco uma oportunidade de estágio na área de tecnologia para aplicar meus conhecimentos em desenvolvimento e contribuir de forma efetiva em projetos reais.
-            </p>
-            <div class="flex gap-4 pt-2">
-                <a href="https://github.com/PedroOtavio2007" target="_blank" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg transition duration-300 shadow-lg shadow-blue-500/20 hover:shadow-blue-400/50">GitHub</a>
-                <a href="https://www.linkedin.com/in/pedro-otávio-b38120353" target="_blank" class="px-5 py-2.5 bg-gray-800 hover:bg-gray-700 text-gray-200 font-medium rounded-lg border border-gray-700 transition duration-300 hover:shadow-lg hover:shadow-blue-400/30">LinkedIn</a>
-            </div>
+    <main class="container">
+        <section id="sobre" class="section about-section">
+            <p class="eyebrow">Desenvolvedor de Software</p>
+            <h1>Olá, sou o Pedro! Sou estudante de <span>Engenharia de Computação</span>.</h1>
+            <p class="lead">Focado em desenvolvimento de software e resolução de problemas através da tecnologia. Participo do desenvolvimento de aplicações mobile em equipe utilizando <strong>React Native</strong> e <strong>TypeScript</strong>, além de atividades acadêmicas com <strong>Python</strong> e <strong>C</strong>. Priorizo a escrita de código limpo e modular e o uso de boas práticas de versionamento com <strong>Git e GitHub</strong>.</p>
+            <p>Através do desenvolvimento de projetos acadêmicos e colaborativos, venho exercitando o entendimento de requisitos e a escrita de código em equipe. Busco uma vaga de estágio na área de tecnologia para aplicar minha base teórica e prática em projetos reais.</p>
         </section>
 
-        <hr class="border-gray-800">
+        <hr>
 
-        <!-- Seção Projetos -->
-        <section id="projetos" class="space-y-8">
-            <div>
-                <h2 class="text-2xl font-bold text-white">Projetos em Destaque</h2>
-                <p class="text-gray-400 text-sm mt-1">Aplicações e módulos que desenvolvi ou colaborei ativamente.</p>
+        <section id="projetos" class="section">
+            <div class="section-heading">
+                <h2>Projetos em Destaque</h2>
+                <p>Aplicações e módulos que desenvolvi ou colaborei ativamente.</p>
             </div>
 
-            <!-- Card de Projeto: App Mobile -->
-            <div class="bg-gray-800/50 border border-gray-700/60 rounded-xl p-6 sm:p-8 space-y-6 hover:border-gray-600 transition">
-                <div class="flex justify-between items-start flex-wrap gap-2">
-                    <div>
-                        <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Projeto Acadêmico em Grupo</span>
-                        <h3 class="text-xl font-bold text-white mt-1">Aplicativo Mobile de Gestão Financeira</h3>
+            <div class="project-list">
+                <article class="project-card project-card--detailed">
+                    <div class="project-header">
+                        <div>
+                            <p class="project-category">Projeto Acadêmico em Grupo</p>
+                            <h3>Aplicativo Mobile de Gestão Financeira</h3>
+                        </div>
+                        <span class="status">Repositório Privado</span>
                     </div>
-                    <!-- Indicador de Repositório Privado -->
-                    <span class="text-xs font-medium text-gray-400 bg-gray-800 border border-gray-700 px-3 py-1 rounded-full">
-                        Repositório Privado
-                    </span>
-                </div>
-
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    Aplicação mobile focada em controle e organização de finanças pessoais, desenvolvida colaborativamente em equipe para auxílio no planejamento financeiro do usuário.
-                </p>
-
-                <div class="bg-gray-900/60 rounded-lg p-4 border border-gray-800 space-y-3">
-                    <h4 class="text-xs font-bold text-gray-300 uppercase tracking-wider">Minhas Contribuições no Projeto:</h4>
-                    <ul class="list-disc list-inside text-sm text-gray-400 space-y-1.5">
-                        <li><strong>Gestão de Orçamentos:</strong> Desenvolvimento da interface e regra de negócio para a criação e acompanhamento de limites de gastos mensais.</li>
-                        <li><strong>Tela de Bloqueio & Segurança:</strong> Implementação da tela de autenticação/bloqueio do aplicativo para garantir a privacidade dos dados do usuário.</li>
-                        <li><strong>Tela "Sobre o App":</strong> Criação da página institucional da aplicação, apresentando informações da versão, termos de uso e proposta da plataforma.</li>
+                    <p>Aplicação mobile focada em controle e organização de finanças pessoais, desenvolvida colaborativamente em equipe para auxílio no planejamento financeiro do usuário.</p>
+                    <div class="contributions">
+                        <h4>Minhas contribuições no projeto</h4>
+                        <ul>
+                            <li><strong>Gestão de Orçamentos:</strong> desenvolvimento da interface e regra de negócio para a criação e acompanhamento de limites de gastos mensais.</li>
+                            <li><strong>Tela de Bloqueio &amp; Segurança:</strong> implementação da tela de autenticação/bloqueio para garantir a privacidade dos dados.</li>
+                            <li><strong>Tela “Sobre o App”:</strong> criação da página institucional com versão, termos de uso e proposta da plataforma.</li>
+                        </ul>
+                    </div>
+                    <ul class="tag-list" aria-label="Tecnologias utilizadas">
+                        <li>React Native</li><li>TypeScript</li><li>Git/GitHub</li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="flex flex-wrap gap-2 pt-2">
-                    <span class="px-2.5 py-1 bg-gray-700/60 text-gray-300 text-xs rounded-md">React Native</span>
-                    <span class="px-2.5 py-1 bg-gray-700/60 text-gray-300 text-xs rounded-md">TypeScript</span>
-                    <span class="px-2.5 py-1 bg-gray-700/60 text-gray-300 text-xs rounded-md">Git/GitHub</span>
-                </div>
-            </div>
-
-            <!-- Card de Projeto: Atividades/Algoritmos -->
-            <div class="bg-gray-800/50 border border-gray-700/60 rounded-xl p-6 sm:p-8 space-y-4 hover:border-gray-600 transition">
-                <div class="flex justify-between items-start flex-wrap gap-2">
-                    <div>
-                        <span class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">Repositório de Códigos</span>
-                        <h3 class="text-xl font-bold text-white mt-1">Algoritmos e Estrutura de Dados</h3>
+                <article class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <p class="project-category project-category--green">Repositório de Códigos</p>
+                            <h3>Paradigma da Programação</h3>
+                        </div>
+                        <a class="repository-link" href="https://github.com/PedroOtavio2007/atividade-lab2" target="_blank" rel="noopener noreferrer">Ver repositório <span aria-hidden="true">→</span></a>
                     </div>
-                    <a href="https://github.com/PedroOtavio2007/atividade-lab2" target="_blank" class="text-sm font-medium text-blue-400 hover:underline">Ver Repositório &rarr;</a>
-                </div>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    Coleção de projetos e laboratórios práticos focados em lógica de programação, estruturas de dados e resolução de problemas utilizando C e Python.
-                </p>
-                <div class="flex flex-wrap gap-2 pt-2">
-                    <span class="px-2.5 py-1 bg-gray-700/60 text-gray-300 text-xs rounded-md">Python</span>
-                    <span class="px-2.5 py-1 bg-gray-700/60 text-gray-300 text-xs rounded-md">C</span>
-                    <span class="px-2.5 py-1 bg-gray-700/60 text-gray-300 text-xs rounded-md">Lógica de Programação</span>
-                </div>
-            </div>
+                    <p>Coleção de exercícios e laboratórios práticos focados em lógica de programação e resolução de problemas utilizando C e Python.</p>
+                    <ul class="tag-list" aria-label="Tecnologias utilizadas">
+                        <li>Python</li><li>C</li><li>Lógica de Programação</li>
+                    </ul>
+                </article>
 
-            <!-- Card de Projeto: Flappy Bird -->
-            <div class="bg-gray-800/50 border border-gray-700/60 rounded-xl p-6 sm:p-8 space-y-4 hover:border-gray-600 transition">
-                <div class="flex justify-between items-start flex-wrap gap-2">
-                    <div>
-                        <span class="text-xs font-semibold text-yellow-400 uppercase tracking-wider">Jogo</span>
-                        <h3 class="text-xl font-bold text-white mt-1">Flappy Bird</h3>
+                <article class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <p class="project-category project-category--yellow">Jogo</p>
+                            <h3>Flappy Bird</h3>
+                        </div>
+                        <a class="repository-link" href="https://github.com/PedroOtavio2007/FlappyBird-Unity" target="_blank" rel="noopener noreferrer">Ver repositório <span aria-hidden="true">→</span></a>
                     </div>
-                    <a href="https://github.com/PedroOtavio2007/FlappyBird-Unity" target="_blank" class="text-sm font-medium text-blue-400 hover:underline">Ver Repositório &rarr;</a>
-                </div>
-                <p class="text-gray-300 text-sm leading-relaxed">
-                    Desenvolvimento de uma recriação do jogo Flappy Bird, com mecânicas de voo, obstáculos, sistema de pontuação e detecção de colisões.
-                </p>
-                <div class="flex flex-wrap gap-2 pt-2">
-                    <span class="px-2.5 py-1 bg-gray-700/60 text-gray-300 text-xs rounded-md">Desenvolvimento de Jogos</span>
-                    <span class="px-2.5 py-1 bg-gray-700/60 text-gray-300 text-xs rounded-md">Lógica de Programação</span>
-                    <span class="px-2.5 py-1 bg-gray-700/60 text-gray-300 text-xs rounded-md">Detecção de Colisões</span>
-                </div>
+                    <p>Desenvolvimento de uma recriação do jogo Flappy Bird, com mecânicas de voo, obstáculos, sistema de pontuação e detecção de colisões.</p>
+                    <ul class="tag-list" aria-label="Competências utilizadas">
+                        <li>Desenvolvimento de Jogos</li><li>Lógica de Programação</li><li>Detecção de Colisões</li>
+                    </ul>
+                </article>
             </div>
         </section>
 
-        <hr class="border-gray-800">
+        <hr>
 
-        <!-- Seção Habilidades -->
-        <section id="habilidades" class="space-y-6">
-            <h2 class="text-2xl font-bold text-white">Habilidades & Ferramentas</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                <div class="p-4 bg-gray-800/40 border border-gray-800 rounded-lg text-center">
-                    <p class="font-semibold text-white">React Native</p>
-                    <p class="text-xs text-gray-400 mt-1">Mobile Dev</p>
-                </div>
-                <div class="p-4 bg-gray-800/40 border border-gray-800 rounded-lg text-center">
-                    <p class="font-semibold text-white">TypeScript</p>
-                    <p class="text-xs text-gray-400 mt-1">Linguagem</p>
-                </div>
-                <div class="p-4 bg-gray-800/40 border border-gray-800 rounded-lg text-center">
-                    <p class="font-semibold text-white">Python & C</p>
-                    <p class="text-xs text-gray-400 mt-1">Lógica & Backend</p>
-                </div>
-                <div class="p-4 bg-gray-800/40 border border-gray-800 rounded-lg text-center">
-                    <p class="font-semibold text-white">Git & GitHub</p>
-                    <p class="text-xs text-gray-400 mt-1">Versionamento</p>
-                </div>
+        <section id="habilidades" class="section">
+            <h2>Habilidades &amp; Ferramentas</h2>
+            <div class="skills-grid">
+                <article class="skill-card"><h3>React Native</h3><p>Mobile Dev</p></article>
+                <article class="skill-card"><h3>TypeScript</h3><p>Linguagem</p></article>
+                <article class="skill-card"><h3>Python &amp; C</h3><p>Lógica &amp; Backend</p></article>
+                <article class="skill-card"><h3>Git &amp; GitHub</h3><p>Versionamento</p></article>
             </div>
         </section>
 
-        <!-- Seção Contato -->
-        <section id="contato" class="space-y-4 pt-6 text-center">
-            <h2 class="text-2xl font-bold text-white">Vamos conversar?</h2>
-            <p class="text-gray-400 text-sm max-w-md mx-auto">
-                Estou em busca de oportunidades de estágio.
-            </p>
-            <div class="pt-2">
-                <a href="mailto:pedroramos.07@hotmail.com?subject=Contato%20via%20Portfólio" class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg transition">
-                    Enviar E-mail
+        <section class="section social-section" aria-labelledby="redes-sociais">
+            <h2 id="redes-sociais">Redes sociais</h2>
+            <div class="social-links">
+                <a class="social-button social-button--github" href="https://github.com/PedroOtavio2007" target="_blank" rel="noopener noreferrer" aria-label="Acessar GitHub de Pedro Ramos" title="GitHub">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.586 2 12.253c0 4.533 2.865 8.378 6.839 9.736.5.095.683-.22.683-.49 0-.24-.009-1.04-.013-1.887-2.782.618-3.369-1.21-3.369-1.21-.455-1.187-1.11-1.503-1.11-1.503-.908-.637.069-.624.069-.624 1.004.072 1.532 1.058 1.532 1.058.892 1.568 2.341 1.115 2.91.853.091-.665.349-1.115.635-1.371-2.221-.26-4.555-1.14-4.555-5.073 0-1.12.39-2.035 1.029-2.753-.103-.26-.446-1.31.098-2.73 0 0 .84-.276 2.75 1.052A9.325 9.325 0 0 1 12 6.907a9.33 9.33 0 0 1 2.504.347c1.909-1.328 2.748-1.052 2.748-1.052.546 1.42.203 2.47.1 2.73.64.718 1.027 1.633 1.027 2.753 0 3.943-2.338 4.81-4.566 5.065.359.32.678.947.678 1.909 0 1.379-.012 2.491-.012 2.831 0 .273.18.59.688.489C19.138 20.628 22 16.784 22 12.253 22 6.586 17.523 2 12 2Z" clip-rule="evenodd"/></svg>
+                </a>
+                <a class="social-button social-button--linkedin" href="https://www.linkedin.com/in/pedro-ot%C3%A1vio-b38120353" target="_blank" rel="noopener noreferrer" aria-label="Acessar LinkedIn de Pedro Ramos" title="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3C4.17 3 3.3 3.88 3.3 4.96c0 1.08.87 1.96 1.95 1.96s1.95-.88 1.95-1.96A1.95 1.95 0 0 0 5.25 3ZM20.7 13.4c0-3.47-1.85-5.08-4.32-5.08-1.99 0-2.88 1.1-3.38 1.87V8.5H9.62V20H13v-5.69c0-1.5.29-2.95 2.15-2.95 1.83 0 1.85 1.71 1.85 3.05V20h3.38l.32-6.6Z"/></svg>
                 </a>
             </div>
         </section>
 
+        <section id="contato" class="section contact-section">
+            <h2>Vamos conversar?</h2>
+            <p>Estou em busca de oportunidades de estágio.</p>
+            <a class="email-button" href="mailto:pedroramos.07@hotmail.com?subject=Contato%20via%20Portf%C3%B3lio">Enviar e-mail</a>
+        </section>
     </main>
 
-    <footer class="border-t border-gray-800 text-center py-6 text-xs text-gray-500">
-        <p>&copy; 2026 • Desenvolvido com HTML e Tailwind CSS</p>
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year">2026</span> • Desenvolvido com HTML, CSS e JavaScript</p>
     </footer>
 
+    <script src="script.js" defer></script>
 </body>
 </html>
