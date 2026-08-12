@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades técnicas, projetos acadêmicos/colaborativos e formas de contato.
 
-🚀 **Acesse o site ao vivo:** [https://seuusuario.github.io]((https://pedro-ramos.vercel.app/))
+🚀 **Acesse o site ao vivo:** https://pedro-ramos.vercel.app/
 
 ---
 
