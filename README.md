@@ -1,4 +1,4 @@
-# 💻 Portfólio Pessoal | Desenvolvedor de Software
+# 💻 Portfólio Pessoal
 
 Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades técnicas, projetos acadêmicos/colaborativos e formas de contato.
 
